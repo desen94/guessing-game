@@ -7,15 +7,15 @@ class GuessingGame {
 		}
 		
 		guess() {
-				this.min + Math.ceil((this.max - this.min) / 2)
+				return this.min + Math.ceil((this.max - this.min) / 2)
 		}
 		
 		lower() {
-				this.max = this.guess()
+				return this.max = this.guess()
 		}
 		
 		greater() {
-				this.min = this.guess()
+				return this.min = this.guess()
 		}
 }
 
